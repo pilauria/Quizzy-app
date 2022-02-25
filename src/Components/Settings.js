@@ -89,20 +89,25 @@ function Settings() {
 
         <div>
           <h2>Select Difficulty:</h2>
-          <select value={questionDifficulty} onChange={handleDifficultyChange}>
-            <option value="" key="difficulty-0">
-              All
-            </option>
-            <option value="easy" key="difficulty-1">
-              Easy
-            </option>
-            <option value="medium" key="difficulty-2">
-              Medium
-            </option>
-            <option value="hard" key="difficulty-3">
-              Hard
-            </option>
-          </select>
+          <form>
+            <select
+              value={questionDifficulty}
+              onChange={handleDifficultyChange}
+            >
+              <option value="" key="difficulty-0">
+                All
+              </option>
+              <option value="easy" key="difficulty-1">
+                Easy
+              </option>
+              <option value="medium" key="difficulty-2">
+                Medium
+              </option>
+              <option value="hard" key="difficulty-3">
+                Hard
+              </option>
+            </select>
+          </form>
         </div>
 
         <div>

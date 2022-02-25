@@ -7,6 +7,7 @@ function ButtonsPartial() {
   const dispatch = useDispatch()
 
   const replay = () => {
+    alert('are you sure you want to leave this game?')
     dispatch({
       type: 'SET_INDEX',
       index: 0,
@@ -19,6 +20,7 @@ function ButtonsPartial() {
   }
 
   const settings = () => {
+    alert('are you sure you want to leave this game?')
     dispatch({
       type: 'SET_QUESTIONS',
       questions: [],
